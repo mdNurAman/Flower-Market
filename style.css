@@ -21,7 +21,9 @@ body {
   font-style: normal;
   background-color: #f5f8ff;
 }
-
+.hide{
+    display: none;
+}
 /* NavBar */
 nav {
   display: flex;
@@ -68,18 +70,74 @@ a {
   color: rgb(0, 0, 0);
   font-family: inter;
 }
+/* Banner Section */
+.banner{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 120px;
+
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+}
+.always , .fresh , .flowers{
+   font-weight: bold;
+   font-size: 4rem; 
+   color:rgba(0, 0, 0, 1) ;
+}
+.fresh,.flowers{
+    color:rgba(233, 90, 8, 1);
+}
+.banner-subtitle{
+    font-family: inter;
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+}
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
   .container {
-    max-width: 94%;
+    max-width: 95%;
     margin: 0 auto;
     padding: 13px 18px;
   }
+  /* Navbar */
   .logo img {
     max-width: 63px;
     height: 38px;
   }
   .web-menus {
     display: none;
+  }
+  .carttt{
+    white-space: nowrap;
+  }
+  /* Banner */
+  .banner{
+    margin-top: 10px;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+    gap: 18px;
+  }
+  .banner-left{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .banner-title{
+    margin-bottom: 13px;
+  }
+  .always , .fresh , .flowers{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .banner-subtitle{
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 400;
+  }
+  .banner-right img{
+    width: 100%;
+    height: auto;
   }
 }
