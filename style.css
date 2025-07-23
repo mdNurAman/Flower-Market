@@ -154,6 +154,70 @@ a {
   padding: 26px 50px 26px 50px;
   border: none;
 }
+/* Plants Lover Section */
+.plants-lover {
+  margin-top: 180px;
+}
+.lover-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 60px;
+}
+.left-side-lover {
+  position: relative;
+}
+.left-side-lover::after {
+  content: "";
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  top: -130px;
+  left: 350px;
+  background-image: url("./assets/trusted-badge.png");
+  background-size: cover;
+  z-index: 5;
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.left-side-lover img {
+  max-width: 100%;
+  height: auto;
+}
+.lover-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.right-side-lover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* .right-side-lover ul {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+} */
+.right-side-lover li {
+  text-align: left;
+  max-width: 480px;
+  list-style: disc;
+  font-size: 22px;
+  font-family: inter;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  /* padding-left: 5px; */
+}
 
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
@@ -229,5 +293,31 @@ a {
   .card-button {
     font-size: 16px;
     padding: 15px 0;
+  }
+  /* Plant Lover */
+  .plants-lover {
+    margin-top: 30px;
+    padding-top: 0;
+  }
+  .lover-container {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+  }
+  .lover-title {
+    font-size: 24px;
+  }
+  .right-side-lover ul {
+    /* max-width: 90%; */
+    display: flex;
+    flex-direction: column;
+  }
+  .right-side-lover li {
+    max-width: 360px;
+    font-size: 14px;
+  }
+  .left-side-lover::after {
+    display: none;
   }
 }
