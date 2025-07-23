@@ -219,6 +219,20 @@ a {
   /* padding-left: 5px; */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
   .container {
@@ -296,8 +310,9 @@ a {
   }
   /* Plant Lover */
   .plants-lover {
+    max-width: 100%;
+    margin: 0 auto;
     margin-top: 30px;
-    padding-top: 0;
   }
   .lover-container {
     margin-top: 0;
@@ -320,4 +335,7 @@ a {
   .left-side-lover::after {
     display: none;
   }
+
+
+
 }
