@@ -21,15 +21,15 @@ body {
   font-style: normal;
   background-color: #f5f8ff;
 }
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 /* NavBar */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding-top: 30px;
 }
 .menus {
   display: flex;
@@ -71,29 +71,90 @@ a {
   font-family: inter;
 }
 /* Banner Section */
-.banner{
-    max-width: 1140px;
-    margin: 0 auto;
-    margin-top: 120px;
+.banner {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.banner-container {
+  display: flex;
+  align-items: center;
+}
+.always,
+.fresh,
+.flowers {
+  font-weight: bold;
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 1);
+}
+.fresh,
+.flowers {
+  color: rgba(233, 90, 8, 1);
+}
+.banner-subtitle {
+  font-family: inter;
+  font-size: 1.37rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* Plant Section */
+.plant-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.our-plants {
+  text-align: center;
+  font-size: 3.12rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+}
+.our {
+  color: rgba(233, 90, 8, 1);
+}
+.plant-subtitle {
+  max-width: 77%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: inter;
+  font-size: 1.37rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.card {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-title,
+.card-price {
+  font-family: inter;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+}
+.card-price {
+  font-weight: 700;
+}
+.card-button {
+  width: 100%;
+  font-family: inter;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(233, 90, 8);
+  padding: 26px 50px 26px 50px;
+  border: none;
+}
 
-}
-.banner-container{
-    display: flex;
-    align-items: center;
-}
-.always , .fresh , .flowers{
-   font-weight: bold;
-   font-size: 4rem; 
-   color:rgba(0, 0, 0, 1) ;
-}
-.fresh,.flowers{
-    color:rgba(233, 90, 8, 1);
-}
-.banner-subtitle{
-    font-family: inter;
-    font-size: 1.37rem;
-    color: rgba(0, 0, 0, 0.5);
-}
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
   .container {
@@ -109,35 +170,64 @@ a {
   .web-menus {
     display: none;
   }
-  .carttt{
+  .carttt {
     white-space: nowrap;
   }
   /* Banner */
-  .banner{
+  .banner {
     margin-top: 10px;
   }
-  .banner-container{
+  .banner-container {
     flex-direction: column-reverse;
     gap: 18px;
   }
-  .banner-left{
+  .banner-left {
     max-width: 95%;
     margin: 0 auto;
   }
-  .banner-title{
+  .banner-title {
     margin-bottom: 13px;
   }
-  .always , .fresh , .flowers{
+  .always,
+  .fresh,
+  .flowers {
     font-size: 1.5rem;
     font-weight: 700;
   }
-  .banner-subtitle{
+  .banner-subtitle {
     font-size: 14px;
     font-family: inter;
     font-weight: 400;
   }
-  .banner-right img{
+  .banner-right img {
     width: 100%;
     height: auto;
+  }
+  /* Plant Section */
+  .plant-section {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .our-plants {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .plant-subtitle {
+    max-width: 98%;
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card-title,
+  .card-price {
+    font-size: 16px;
+  }
+  .card-button {
+    font-size: 16px;
+    padding: 15px 0;
   }
 }
