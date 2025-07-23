@@ -1,8 +1,85 @@
-/* Global */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
 }
-.container{
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+  background-color: #f5f8ff;
+}
+
+/* NavBar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.menus {
+  display: flex;
+  align-items: center;
+}
+.web-menus {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.web-menus li a:not(.home) {
+  font-family: inter;
+  font-weight: 400;
+  color: rgb(137, 135, 161);
+}
+.home {
+  font-family: inter;
+  font-weight: 700;
+  color: rgba(37, 36, 50, 1);
+}
+
+.mobile-menus {
+  display: flex;
+  margin-left: 48px;
+  align-items: center;
+}
+.fa-cart-shopping {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 1);
+}
+.mobile-menus p {
+  color: rgb(0, 0, 0);
+  font-family: inter;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 94%;
+    margin: 0 auto;
+    padding: 13px 18px;
+  }
+  .logo img {
+    max-width: 63px;
+    height: 38px;
+  }
+  .web-menus {
+    display: none;
+  }
 }
