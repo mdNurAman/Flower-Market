@@ -351,6 +351,7 @@ a {
 .join input {
   width: 644px;
   height: 50px;
+  border: none;
 }
 .join input::placeholder {
   font-family: inter;
@@ -363,9 +364,10 @@ a {
   color: white;
   font-family: inter;
   font-weight: 600;
-  padding: 17px 50px 17px 50px;
-  border: none;
   height: 50px;
+  padding: 18px 50px 18px 50px;
+  border: none;
+  overflow: hidden;
 }
 /* footer */
 .footer {
