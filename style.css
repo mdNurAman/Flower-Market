@@ -368,45 +368,37 @@ a {
   height: 50px;
 }
 /* footer */
-.footer{
-    margin-top: 50px;
-    margin-bottom: 100px;
+.footer {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
-.subtitle{
-    font-family: inter;
-    font-size: 22px;
-    margin-top: 10px;
-    max-width: 260px;
-    color:rgba(0, 0, 0, 0.5) ;
+.subtitle {
+  font-family: inter;
+  font-size: 22px;
+  margin-top: 10px;
+  max-width: 260px;
+  color: rgba(0, 0, 0, 0.5);
 }
-.middle-left ul, .middle-right ul{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
+.middle-left ul,
+.middle-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.middle-left ul li, .middle-right ul li{
-    font-family: inter;
-    color: rgb(107, 114, 128);
+.middle-left ul li,
+.middle-right ul li {
+  font-family: inter;
+  color: rgb(107, 114, 128);
 }
-.logos-footer{
-    display: flex;
-    justify-content: center;
-    gap:20px;
+.logos-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-
-
-
-
-
-
-
-
 
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
@@ -551,9 +543,9 @@ a {
     font-size: 16px;
   }
   /* Join */
-  .join{
-    margin-top:40px ;
-}
+  .join {
+    margin-top: 40px;
+  }
   .join-container {
     max-width: 100%;
     height: 275px;
@@ -569,32 +561,210 @@ a {
     padding: 17px 20px 17px 20px;
   }
   /* footer */
-  .footer{
+  .footer {
     margin-top: 40px;
     margin-bottom: 100px;
   }
-  .footer-container{
+  .footer-container {
     flex-direction: column;
-
-}
-.subtitle{
+  }
+  .subtitle {
     font-size: 16px;
     max-width: 320px;
     margin-bottom: 20px;
-}
-.middle-left ul{
+  }
+  .middle-left ul {
     margin-bottom: 30px;
-}
-.middle-right ul{
+  }
+  .middle-right ul {
     margin-bottom: 30px;
-}
-.logos-footer{
+  }
+  .logos-footer {
     justify-content: flex-start;
+  }
 }
 
 
-
-
-
-
+/* Larger device same layout as mobile */
+@media screen and (min-width: 576px) and (max-width:940px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 15px 5%;
+  }
+  /* Navbar */
+  .logo img {
+    max-width: 63px;
+    height: 38px;
+  }
+  .web-menus {
+    display: none;
+  }
+  .carttt {
+    white-space: nowrap;
+  }
+  /* Banner */
+  .banner {
+    margin-top: 10px;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 18px;
+  }
+  .banner-left {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .banner-title {
+    margin-bottom: 13px;
+  }
+  .always,
+  .fresh,
+  .flowers {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .banner-subtitle {
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 400;
+  }
+  .banner-right img {
+    width: 100%;
+    height: auto;
+  }
+  /* Plant Section */
+  .plant-section {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .our-plants {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .plant-subtitle {
+    max-width: 98%;
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card-title,
+  .card-price {
+    font-size: 16px;
+  }
+  .card-button {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  /* Plant Lover */
+  .plants-lover {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .lover-container {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+  }
+  .lover-title {
+    font-size: 24px;
+  }
+  .right-side-lover ul {
+    /* max-width: 90%; */
+    display: flex;
+    flex-direction: column;
+  }
+  .right-side-lover li {
+    max-width: 360px;
+    font-size: 14px;
+  }
+  .left-side-lover::after {
+    display: none;
+  }
+  /* Deal */
+  .latest-deal {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  .latest,
+  .deal {
+    font-size: 24px;
+  }
+  .deal-subtitle {
+    font-size: 14px;
+    text-align: center;
+    max-width: 336px;
+    margin-bottom: 40px;
+  }
+  .deal-container {
+    display: grid;
+    grid-template-areas:
+      "first"
+      "second"
+      "three";
+    gap: 28px;
+  }
+  .first,
+  .second {
+    width: 90vw;
+    height: 30vh;
+  }
+  .three {
+    width: 90vw;
+    height: 30vh;
+  }
+  .three h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  .three button {
+    font-size: 16px;
+  }
+  /* Join */
+  .join {
+    margin-top: 40px;
+  }
+  .join-container {
+    max-width: 100%;
+    height: 275px;
+  }
+  .join-title {
+    font-size: 20px;
+  }
+  .join input {
+    max-width: 50vw;
+  }
+  .join button {
+    max-width: 30vw;
+    padding: 17px 20px 17px 20px;
+  }
+  /* footer */
+  .footer {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .subtitle {
+    font-size: 16px;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+  .middle-left ul {
+    margin-bottom: 30px;
+  }
+  .middle-right ul {
+    margin-bottom: 30px;
+  }
+  .logos-footer {
+    justify-content: flex-start;
+  }
 }
