@@ -319,7 +319,53 @@ a {
   grid-template-areas:
     "first three three"
     "second three three";
-  gap: 28px;
+  column-gap: 28px;
+  row-gap: 21px;
+}
+/* Join Section */
+.join {
+  margin-top: 120px;
+}
+.join-container {
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 533px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.join-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+.join-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join input {
+  width: 644px;
+  height: 50px;
+}
+.join input::placeholder {
+  font-family: inter;
+  padding: 8px 20px 8px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+.join button {
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  font-family: inter;
+  font-weight: 600;
+  padding: 17px 50px 17px 50px;
+  border: none;
+  height: 50px;
 }
 
 /* Mobile Responsive */
@@ -446,7 +492,6 @@ a {
       "second"
       "three";
     gap: 28px;
-
   }
   .first,
   .second {
@@ -464,5 +509,23 @@ a {
   }
   .three button {
     font-size: 16px;
+  }
+  /* Join */
+  .join{
+    margin-top:40px ;
+}
+  .join-container {
+    max-width: 100%;
+    height: 275px;
+  }
+  .join-title {
+    font-size: 20px;
+  }
+  .join input {
+    max-width: 50vw;
+  }
+  .join button {
+    max-width: 30vw;
+    padding: 17px 20px 17px 20px;
   }
 }
